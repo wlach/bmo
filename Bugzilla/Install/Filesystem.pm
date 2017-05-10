@@ -377,7 +377,7 @@ sub FILESYSTEM {
     };
 
     my $yui3_all_js = sub {
-        return join(";\n",
+        return join("\n",
             map { scalar read_file($_) } read_file("js/yui3.js.list", { chomp => 1 })
         );
     };
